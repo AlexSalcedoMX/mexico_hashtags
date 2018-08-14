@@ -1,0 +1,26 @@
+{
+  "name": "mexico_hashtags",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "develop": "nodemon -L --exec node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSalcedoMX/mexico_hashtags.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexSalcedoMX/mexico_hashtags/issues"
+  },
+  "homepage": "https://github.com/AlexSalcedoMX/mexico_hashtags#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "moment": "^2.22.2",
+    "winston": "^2.4.0"
+  }
+}

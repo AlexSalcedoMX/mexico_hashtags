@@ -1,0 +1,4 @@
+*.env
+!system_variables.env
+!example.env
+
