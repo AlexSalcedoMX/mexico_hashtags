@@ -1,18 +1,20 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const hashtagRouter = require('../../routes/hashtag_route');
 
 
 function init() {
 
-    app.get('/', function (req, res) {
-      res.send('Hello World!');
-    });
+    const app = express();
+    const router = express.Router();
+
+    app.use('/hashtag', hashtagRouter);
+
+    app.use('/', router);
 
     app.listen(3000, function () {
-      console.log('Example app listening on port 3000!');
+      console.log('Listening on port 3000!');
     });
 }
-
 
 
 module.exports = init;

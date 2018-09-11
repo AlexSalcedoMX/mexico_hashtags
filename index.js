@@ -1,3 +1,4 @@
+const { init } = require('./config/system/mongoose');
 const express = require('./config/system/express');
 const envLoader = require('./utils/env_loader');
 const Logger = require('./utils/logger');
@@ -16,4 +17,5 @@ if (parsedObject.error) {
 }
 
 // Mongoose and Server Initialization
-express();
+// Mongoose and Server Initialization
+init(() => express());
